@@ -1,0 +1,104 @@
+input[type="text"]{
+    border-radius: 1px;
+    border: 0.5px groove #5e5e5e;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 10px;
+    width: 80%;
+    height: 50px;
+    font-size: 28px;
+    color: #c0c0c0;
+    text-transform: capitalize;
+    background-color: #000;
+    opacity: 0.8;
+}
+.search-event{
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+.navbar-nav .btn-links{
+    margin-top: 13px;
+    padding: 10px;
+    font-size: 1.3em;
+    color: #fff;
+
+}
+a.btn-links:hover{
+    text-decoration: underline;
+    color: #3c3c3c;
+}
+ul.navbar-nav li{
+    margin-right: 16px;
+}
+.banner{
+
+}
+.banner-content{
+    position: absolute;
+    top: 150px;
+    min-width: 280px;
+    color: #fff;
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    text-shadow: 0 0 2px gray;
+}
+.banner-content article{
+    padding: 10px 120px 10px 120px;
+}
+.navbar-wrapper{
+    position: relative;
+    padding: 10px;
+    max-width: 100%;
+    background: #000000;
+    border-bottom: 1px solid #222222;
+    height: 75px;
+    font-size: 15px;
+    overflow: hidden;
+    opacity: 0.6;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.left-pane{
+    position: absolute;
+    left: 0;
+    right: auto;
+    height: 100%;
+    padding: 30px 20px 40px 20px;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 1001;
+    min-width: 400px;
+    width: auto;
+}
+img{
+    max-width: 100%;
+//min-height: 400px;
+    height: auto;
+    width: auto\9;
+    background-size: cover;
+}
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px;   /* 50% */
+    }
+}
