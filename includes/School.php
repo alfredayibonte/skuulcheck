@@ -16,11 +16,21 @@ class School
 	}
 	function storeSchool($schoolname, $schoolstreetname)
 	{
-		$this->schoolname = $schoolname;
-		$this->schoolstreetname = $schoolstreetname;
 		$sql = "INSERT INTO `skuulcheck`.`school` (`schoolname`, `schoolstreetname`) VALUES ";
-		$sql .= "('$this->schoolname', '$this->schoolstreetname') ";
+		$sql .= "('$schoolname', '$schoolstreetname') ";
 		mysql_query($sql);
+		$this->database->disconnectdb();
+	}
+	function retrieveSchool($schoolname)
+	{
+		$list = array();
+		$sql = "SELECT `schoolname`, `schoolstreetname` FROM `skuulcheck`.`school` WHERE ";
+		$sql .= "`schoolname`='$schoolname'";
+		$result = mysql_query($sql);
+		while ($rs = mysql_fetch_array($result)) 
+		{
+			
+		}
 		$this->database->disconnectdb();
 	}
 	function removeSchool($schoolname)
@@ -40,6 +50,6 @@ class School
 	
 }
 $school = new School();
-$school->storeSchool("Hadi International school","shockor");
+$school->storeSchool("James Town school","JamesTown");
 //$school->removeSchool("University of Ghana");
 ?>
