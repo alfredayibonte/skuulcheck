@@ -1,0 +1,53 @@
+.main-dash{
+    padding: 10px;
+    margin-top: 80px;
+}
+.sidepane-content{
+    border-right: 1px solid #e5e5e5;
+    min-height: 300px;
+    height: auto;
+}
+ul.bs-sidenav li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+select#category{
+    width: 100%;
+    height: 35px;
+    color: #8e8e8e;
+    font-size: 18px;
+    padding: 5px;
+    margin-right: -5px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.btn-add-school{
+    margin-top: 30px;
+    padding: 10px;
+}
+#add-school{
+    display: none;
+}
+#view-schools{
+    display: none;
+}
+.lshift{
+    padding-left: 12px;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
